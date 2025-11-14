@@ -1,13 +1,15 @@
-
+import Chai  from "./Chai";
 function App() {
   return (
     <div>
-    <h1>chai aur react | Atharva Chauhan</h1>
+    {/* <h1>chai aur react | Atharva Chauhan</h1>
     <p>what i learned in today's class was launching a project with react library
       and we have edited the files in the src folder and then changed it to a lot 
-      simpler </p>
+      simpler </p> */}
+      <Chai/>
     </div>
   );
 }
 
-export default App;
+export default App;//app is a function returning html 
+//we are able to render html through JS 
