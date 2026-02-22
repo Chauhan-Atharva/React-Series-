@@ -11,7 +11,14 @@ function App() {
     const addValue=()=>{
       // counter = counter+1;
       if(counter<20){ 
-      setCounter(counter+1);//or counter = counter + 1; setCounter(counter)      
+      // setCounter(counter+1);//or counter = counter + 1; setCounter(counter) 
+      // setCounter(counter+1);//even after all these setCounters only one time counter updated
+      // setCounter(counter+1);//only one time updated as useState considers them as same
+      // setCounter(counter+1);
+      setCounter((prevCounter)=> prevCounter+1)//prevCounter - the previous counter value
+      setCounter((prevCounter)=> prevCounter+1);
+      setCounter((prevCounter)=> prevCounter+1)
+      setCounter((prevCounter)=> prevCounter+1)
     }
   }
     const removeValue = ()=>{
